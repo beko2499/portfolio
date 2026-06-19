@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abubkr Abbas — AI Solutions Architect</title>
+    <meta name="description" content="Professional CV of Abubkr Abbas Elkhider Mohammed">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Toolbar -->
+    <div class="toolbar no-print" id="toolbar">
+        <button class="btn-tool" onclick="window.print()" title="Print / Save as PDF">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2" />
+                <rect x="6" y="14" width="12" height="8" />
+            </svg>
+            <span>PDF</span>
+        </button>
+        <button class="btn-tool" onclick="toggleTheme()" title="Toggle Theme">
+            <svg id="themeIcon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+            </svg>
+        </button>
+        <button class="btn-tool" onclick="toggleLang()" title="Toggle Language">
+            <span id="langLabel">ع</span>
+        </button>
+        <select class="color-select" onchange="changeAccent(this.value)" title="Accent Color">
+            <option value="#7B2D2D">⬤</option>
+            <option value="#6366f1">⬤</option>
+            <option value="#8b5cf6">⬤</option>
+            <option value="#06b6d4">⬤</option>
+            <option value="#10b981">⬤</option>
+            <option value="#1a1a1a">⬤</option>
+        </select>
+    </div>
+
+    <!-- CV Container -->
+    <div class="cv-page" id="cvPage">
+
+        <!-- ====== HEADER ====== -->
+        <header class="cv-header">
+            <div class="header-info">
+                <h1 class="name" data-en="Abubkr Abbas Elkhider Mohammed" data-ar="ابوبكر عباس الخضر محمد">Abubkr Abbas
+                    Elkhider Mohammed</h1>
+                <p class="job-title" data-en="AI Solutions Architect" data-ar="مهندس حلول الذكاء الاصطناعي">
+                    AI Solutions Architect</p>
+                <div class="contact-row">
+                    <span class="contact-item">
+                        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                        </svg>
+                        <span data-en="+971504494638" data-ar="+971504494638" dir="ltr">+971504494638</span>
+                    </span>
+                    <span class="contact-sep">|</span>
+                    <span class="contact-item">
+                        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <span>abubkr249@icloud.com</span>
+                    </span>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-item">
+                        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <span data-en="United Arab Emirates" data-ar="الإمارات العربية المتحدة">United Arab
+                            Emirates</span>
+                    </span>
+                </div>
+            </div>
+            <!-- Photo removed upon request -->
+        </header>
+        <div class="header-line"></div>
+
+        <!-- ====== PROFESSIONAL SUMMARY ====== -->
+        <section class="cv-section">
+            <h2 class="section-title" data-en="Professional Summary" data-ar="الملخص المهني">Professional Summary</h2>
+            <p class="body-text"
+                data-en="AI Solutions Architect with 2+ years of hands-on experience designing, orchestrating, and shipping production-grade applications through AI-augmented workflows. I specialize in translating complex requirements into robust system architectures — then directing modern AI code-generation tools to build, while owning quality, security review, and delivery. Deep focus on Agentic AI Systems and MCP Server Development (Model Context Protocol): secure servers with OAuth 2.1, multi-agent workflows with LangGraph, RAG pipelines, and workflow automation across Python and Node.js stacks. Proven ability to architect and deliver complete multi-platform ecosystems — AI-powered backends, mobile apps, and real-time systems — fast."
+                data-ar="مهندس حلول ذكاء اصطناعي بخبرة عملية تزيد عن سنتين في تصميم وتنسيق وإطلاق تطبيقات إنتاجية احترافية عبر سير عمل معزّز بالذكاء الاصطناعي. أتخصص في تحويل المتطلبات المعقدة إلى هياكل أنظمة متينة، ثم توجيه أدوات توليد الأكواد الحديثة للبناء، مع تحمّل مسؤولية الجودة والمراجعة الأمنية والتسليم. تركيز عميق على أنظمة الوكلاء الذكية وتطوير خوادم MCP (بروتوكول سياق النموذج): خوادم آمنة بـ OAuth 2.1، وسير عمل متعدد الوكلاء بـ LangGraph، وأنابيب RAG، وأتمتة سير العمل عبر منظومات Python و Node.js. قدرة مثبتة على تصميم وتسليم أنظمة متكاملة متعددة المنصات — خوادم مدعومة بالذكاء الاصطناعي وتطبيقات موبايل وأنظمة حية — وبسرعة عالية.">
+                AI Solutions Architect with 2+ years of hands-on experience designing, orchestrating, and shipping
+                production-grade applications through AI-augmented workflows. I specialize in translating complex
+                requirements into robust system architectures — then directing modern AI code-generation tools to build,
+                while owning quality, security review, and delivery. Deep focus on Agentic AI Systems and MCP Server
+                Development (Model Context Protocol): secure servers with OAuth 2.1, multi-agent workflows with LangGraph,
+                RAG pipelines, and workflow automation across Python and Node.js stacks. Proven ability to architect and
+                deliver complete multi-platform ecosystems — AI-powered backends, mobile apps, and real-time systems —
+                fast.</p>
+        </section>
+
+        <!-- ====== EDUCATION ====== -->
+        <section class="cv-section">
+            <h2 class="section-title" data-en="Education" data-ar="التعليم">Education</h2>
+            <div class="entry-block">
+                <div class="entry-header">
+                    <h3 data-en="BSc Computer Science & Information Technology"
+                        data-ar="بكالوريوس علوم الحاسوب وتقانة المعلومات">BSc Computer Science & Information Technology
+                    </h3>
+                    <span class="entry-date" data-en="2019 — 2026" data-ar="2019 — 2026">2019 — 2026</span>
+                </div>
+                <p class="entry-sub" data-en="Al-Zaiem Al-Azhari University" data-ar="جامعة الزعيم الأزهري">Al-Zaiem
+                    Al-Azhari University</p>
+            </div>
+        </section>
+
+        <!-- ====== CORE COMPETENCIES ====== -->
+        <section class="cv-section">
+            <h2 class="section-title" data-en="Core Competencies" data-ar="المهارات الأساسية">Core Competencies</h2>
+            <ul class="cv-list skills-list">
+                <li data-en="System Architecture & Solution Design" data-ar="هندسة الأنظمة وتصميم الحلول">System Architecture & Solution Design</li>
+                <li data-en="Requirements Analysis & Project Planning" data-ar="تحليل المتطلبات وتخطيط المشاريع">Requirements Analysis & Project Planning</li>
+                <li data-en="Advanced Prompt Engineering & AI Orchestration" data-ar="هندسة الأوامر المتقدمة وتنسيق الذكاء الاصطناعي">Advanced Prompt Engineering & AI Orchestration</li>
+                <li data-en="Agentic AI Workflows (LangGraph · MCP · RAG)" data-ar="سير عمل الوكلاء الذكية (LangGraph · MCP · RAG)">Agentic AI Workflows (LangGraph · MCP · RAG)</li>
+                <li data-en="Code & Security Review" data-ar="مراجعة الأكواد والمراجعة الأمنية">Code & Security Review</li>
+                <li data-en="Workflow Automation & Systems Integration" data-ar="أتمتة سير العمل وتكامل الأنظمة">Workflow Automation & Systems Integration</li>
+                <li data-en="Rapid Prototyping & Product Delivery (Shipping)" data-ar="النمذجة السريعة وإطلاق المنتجات">Rapid Prototyping & Product Delivery (Shipping)</li>
+            </ul>
+        </section>
+
+        <!-- ====== TECH STACK ECOSYSTEM ====== -->
+        <section class="cv-section">
+            <h2 class="section-title" data-en="Tech Stack Ecosystem" data-ar="بيئة العمل والتقنيات">Tech Stack Ecosystem</h2>
+            <p class="body-text" data-en="Architect and ship applications across the following stack using AI-augmented workflows:" data-ar="أصمم وأطلق التطبيقات عبر المنظومة التقنية التالية باستخدام سير عمل معزّز بالذكاء الاصطناعي:">Architect and ship applications across the following stack using AI-augmented workflows:</p>
+            <ul class="cv-list skills-list">
+                <li><strong data-en="AI & Agentic Systems:" data-ar="الذكاء الاصطناعي والوكلاء:">AI & Agentic Systems:</strong> LangChain, LangGraph, RAG Pipelines, Tool-Calling Agents, MCP Server Development, Vector Databases (Qdrant), Prompt Engineering, Google Gemini API.</li>
+                <li><strong data-en="Frontend:" data-ar="الواجهات الأمامية:">Frontend:</strong> React, Next.js 14, TypeScript, Tailwind CSS / shadcn, Three.js / WebGL.</li>
+                <li><strong data-en="Mobile:" data-ar="الموبايل:">Mobile:</strong> Flutter / Dart, Firebase.</li>
+                <li><strong data-en="Backend & DB:" data-ar="الخوادم والبيانات:">Backend & DB:</strong> Node.js (Express / Fastify), Python, PostgreSQL, MongoDB, Redis, Drizzle ORM, Supabase, OAuth 2.1, Socket.io.</li>
+                <li><strong data-en="Tools & DevOps:" data-ar="الأدوات والبنية التحتية:">Tools & DevOps:</strong> Git, Docker / Docker Compose, pnpm Workspaces, Linux VPS (Caddy / Nginx), n8n (Automation), CI/CD, REST APIs.</li>
+                <li><strong data-en="Integrations:" data-ar="التكاملات:">Integrations:</strong> WhatsApp APIs (Baileys), VAPI Voice Platform, Telegram Bot API, Payment Gateways.</li>
+            </ul>
+        </section>
+
+        <!-- ====== CERTIFICATIONS ====== -->
+        <section class="cv-section">
+            <h2 class="section-title" data-en="Certifications" data-ar="الشهادات">Certifications</h2>
+            <ul class="cv-list">
+                <li>
+                    <span data-en="Developing Mobile Apps with Flutter — IBM & SkillUp (Oct 2025)" data-ar="تطوير تطبيقات الموبايل بـ Flutter — IBM & SkillUp (أكتوبر 2025)">Developing Mobile Apps with Flutter — IBM & SkillUp (Oct 2025)</span>
+                    <a href="https://coursera.org/account/accomplishments/specialization/EXXAIZ0Y9L65" target="_blank" class="cert-link" data-en="Verify" data-ar="تحقق">Verify</a>
+                </li>
+                <li>
+                    <span data-en="Generative AI: Prompt Engineering Basics — IBM (Oct 2025)" data-ar="الذكاء الاصطناعي التوليدي: أساسيات هندسة الأوامر — IBM (أكتوبر 2025)">Generative AI: Prompt Engineering Basics — IBM (Oct 2025)</span>
+                    <a href="https://coursera.org/account/accomplishments/verify/TLIPMM375ZUF" target="_blank" class="cert-link" data-en="Verify" data-ar="تحقق">Verify</a>
+                </li>
+                <li>
+                    <span data-en="Mobile App Notifications, Databases & Publishing — SkillUp (Oct 2025)" data-ar="إشعارات التطبيقات وقواعد البيانات والنشر — SkillUp (أكتوبر 2025)">Mobile App Notifications, Databases & Publishing — SkillUp (Oct 2025)</span>
+                    <a href="https://coursera.org/account/accomplishments/verify/D3XJ3LVJPYS7" target="_blank" class="cert-link" data-en="Verify" data-ar="تحقق">Verify</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ====== LANGUAGES ====== -->
+        <section class="cv-section">
+            <h2 class="section-title" data-en="Languages" data-ar="اللغات">Languages</h2>
+            <ul class="cv-list">
+                <li data-en="Arabic — Native" data-ar="العربية — اللغة الأم">Arabic — Native</li>
+                <li data-en="English — Professional" data-ar="الإنجليزية — مهني">English — Professional</li>
+            </ul>
+        </section>
+
+        <!-- ====== WORK EXPERIENCE ====== -->
+        <section class="cv-section">
+            <h2 class="section-title" data-en="Professional Experience" data-ar="الخبرة المهنية">Professional Experience
+            </h2>
+            <div class="entry-block">
+                <div class="entry-header">
+                    <h3 data-en="Freelance AI Solutions Architect & Product Builder" data-ar="مهندس حلول ذكاء اصطناعي ومطوّر منتجات — عمل حر">
+                        Freelance AI Solutions Architect & Product Builder</h3>
+                    <span class="entry-date" data-en="2024 — Present" data-ar="2024 — الحاضر">2024 — Present</span>
+                </div>
+                <p class="entry-sub" data-en="Self-Employed · Remote" data-ar="عمل حر · عن بعد">Self-Employed · Remote
+                </p>
+                <ul class="cv-list">
+                    <li data-en="Architected and delivered 3+ production-grade application ecosystems for clients across e-commerce, fintech, and government sectors"
+                        data-ar="صممت وسلّمت أكثر من 3 أنظمة تطبيقات إنتاجية متكاملة لعملاء في قطاعات التجارة الإلكترونية والتقنية المالية والحكومية">
+                        Architected and delivered 3+ production-grade application ecosystems for clients across
+                        e-commerce, fintech, and government sectors</li>
+                    <li data-en="Leveraged AI-augmented workflows (Antigravity) to accelerate delivery by ~50%, achieving output equivalent to a 3-person team"
+                        data-ar="استخدمت سير عمل الذكاء الاصطناعي (Antigravity) لتسريع التسليم بنسبة ~50%، بإنتاجية تعادل فريق من 3 مطورين">
+                        Leveraged AI-augmented workflows (Antigravity) to accelerate delivery by ~50%, achieving output
+                        equivalent to a 3-person team</li>
+                    <li data-en="Managed complete project lifecycles: requirements → architecture → implementation → testing → deployment → maintenance"
+                        data-ar="أدرت دورات حياة المشاريع: تحليل → تصميم → تنفيذ → اختبار → نشر → صيانة">Managed
+                        complete project lifecycles: requirements → architecture → implementation → testing → deployment
+                        → maintenance</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ====== AI / AGENTIC PROJECTS ====== -->
+        <section class="cv-section">
+            <h2 class="section-title" data-en="AI & Agentic Projects" data-ar="مشاريع الذكاء الاصطناعي والوكلاء">AI & Agentic Projects</h2>
+
+            <!-- AI Project 0: WMCP -->
+            <div class="entry-block">
+                <div class="entry-header">
+                    <h3 data-en="WMCP — WhatsApp MCP Platform (Model Context Protocol)" data-ar="WMCP — منصة واتساب MCP (بروتوكول سياق النموذج)">WMCP — WhatsApp MCP Platform (Model Context Protocol)</h3>
+                    <a href="https://app.whats-mcp.xyz" target="_blank" class="project-link">app.whats-mcp.xyz</a>
+                    <a href="https://github.com/beko2499/wmcp" target="_blank" class="project-link github-link">GitHub</a>
+                </div>
+                <p class="tech-stack">MCP SDK 1.29 · OAuth 2.1 PKCE · Fastify · Baileys · Next.js 14 · Drizzle ORM · PostgreSQL · Redis · Three.js · Docker · PM2 · Caddy</p>
+                <ul class="cv-list">
+                    <li data-en="Built a production MCP server with OAuth 2.1 (PKCE S256) enabling AI clients (Claude, ChatGPT, Gemini) to securely send/read WhatsApp messages — supporting both Streamable HTTP (remote) and stdio (local) transports with 11-table PostgreSQL schema" data-ar="بنيت خادم MCP إنتاجي مع OAuth 2.1 (PKCE S256) يتيح لعملاء الذكاء الاصطناعي (Claude, ChatGPT, Gemini) إرسال وقراءة رسائل واتساب بأمان — مع دعم Streamable HTTP و stdio مع قاعدة بيانات PostgreSQL من 11 جدول">Built a production MCP server with OAuth 2.1 (PKCE S256) enabling AI clients (Claude, ChatGPT, Gemini) to securely send/read WhatsApp messages — supporting both Streamable HTTP (remote) and stdio (local) transports with 11-table PostgreSQL schema</li>
+                    <li data-en="Architected a pnpm monorepo (4 packages) with a Fastify-powered WhatsApp engine featuring human behavior simulation (typing delays, periodic breaks, presence management) for anti-ban protection, and Redis-backed bulk messaging with live progress widgets" data-ar="صممت معمارية monorepo بـ pnpm (4 حزم) مع محرك واتساب بـ Fastify يتضمن محاكاة سلوك بشري (تأخيرات كتابة، استراحات دورية، إدارة الحضور) لحماية من الحظر، ورسائل جماعية مع Redis وwidgets تقدم مباشر">Architected a pnpm monorepo (4 packages) with a Fastify-powered WhatsApp engine featuring human behavior simulation (typing delays, periodic breaks, presence management) for anti-ban protection, and Redis-backed bulk messaging with live progress widgets</li>
+                    <li data-en="Designed a full Arabic RTL user portal on Next.js 14 with NextAuth, WebGL shader backgrounds (Three.js + GLSL), OAuth consent flow, API token management, and glassmorphism UI — deployed on Hetzner ARM64 with Docker Compose, PM2, and Caddy auto-HTTPS" data-ar="صممت بوابة مستخدم عربية RTL كاملة على Next.js 14 مع NextAuth، خلفيات WebGL (Three.js + GLSL)، تدفق موافقة OAuth، إدارة رموز API، وواجهة glassmorphism — منشورة على Hetzner ARM64 مع Docker Compose و PM2 و Caddy">Designed a full Arabic RTL user portal on Next.js 14 with NextAuth, WebGL shader backgrounds (Three.js + GLSL), OAuth consent flow, API token management, and glassmorphism UI — deployed on Hetzner ARM64 with Docker Compose, PM2, and Caddy auto-HTTPS</li>
+                </ul>
+            </div>
+
+            <!-- AI Project 1: Multi-Agent Research Team -->
+            <div class="entry-block">
+                <div class="entry-header">
+                    <h3 data-en="Multi-Agent Research Team — LangGraph Stateful Workflow"
+                        data-ar="فريق البحث الذكي — سير عمل متعدد الوكلاء مع LangGraph">Multi-Agent Research Team — LangGraph Stateful Workflow</h3>
+                    <a href="https://github.com/beko2499/multi-agent-research" target="_blank" class="project-link github-link">GitHub</a>
+                </div>
+                <p class="tech-stack">LangGraph.js · StateGraph · Google Gemini · SerpAPI · MemorySaver · TypeScript · Express</p>
+                <ul class="cv-list">
+                    <li data-en="Designed a multi-agent system with Researcher and Analyst agents communicating through a shared StateGraph, implementing the Reflection Pattern for self-correcting research loops"
+                        data-ar="صممت نظام متعدد الوكلاء مع وكيل باحث ومحلل يتواصلان عبر StateGraph مشترك، مع تنفيذ نمط المراجعة الذاتية (Reflection) لحلقات بحث ذاتية التصحيح">Designed a multi-agent system with Researcher and Analyst agents communicating through a shared StateGraph, implementing the Reflection Pattern for self-correcting research loops</li>
+                    <li data-en="Implemented Conditional Edges for intelligent routing (sufficient data → report, insufficient → re-search), with conversation memory via MemorySaver checkpointer"
+                        data-ar="نفذت مسارات شرطية للتوجيه الذكي (بيانات كافية ← تقرير، ناقصة ← إعادة بحث)، مع ذاكرة محادثة عبر MemorySaver">Implemented Conditional Edges for intelligent routing (sufficient data → report, insufficient → re-search), with conversation memory via MemorySaver checkpointer</li>
+                    <li data-en="Built smart Router that decides whether to search the web or answer from conversation history, reducing unnecessary API calls"
+                        data-ar="بنيت موجّه ذكي يقرر البحث في الإنترنت أو الاعتماد على ذاكرة المحادثة، مما يقلل استدعاءات API غير الضرورية">Built smart Router that decides whether to search the web or answer from conversation history, reducing unnecessary API calls</li>
+                </ul>
+            </div>
+
+            <!-- AI Project 4: Voice Agent Receptionist -->
+            <div class="entry-block">
+                <div class="entry-header">
+                    <h3 data-en="AI Voice Receptionist Agent — VAPI & Supabase"
+                        data-ar="وكيل موظف استقبال صوتي ذكي — VAPI و Supabase">AI Voice Receptionist Agent — VAPI & Supabase</h3>
+                    <a href="https://github.com/beko2499/voice-agent" target="_blank" class="project-link github-link">GitHub</a>
+                </div>
+                <p class="tech-stack">VAPI Voice AI · Supabase Edge Functions (Deno) · OpenAI GPT-4o-mini · Webhooks · PostgreSQL · Tool Calling</p>
+                <ul class="cv-list">
+                    <li data-en="Built a production AI voice agent that answers real phone calls, checks appointment availability in real-time, and books appointments autonomously via natural conversation"
+                        data-ar="بنيت وكيل صوتي ذكي إنتاجي يرد على المكالمات الهاتفية الحقيقية، يفحص المواعيد المتاحة فورياً، ويحجز المواعيد تلقائياً عبر محادثة طبيعية">Built a production AI voice agent that answers real phone calls, checks appointment availability in real-time, and books appointments autonomously via natural conversation</li>
+                    <li data-en="Designed serverless webhook architecture on Supabase Edge Functions (Deno runtime) handling VAPI tool-call payloads, with dynamic argument parsing and multi-format payload support"
+                        data-ar="صممت بنية webhook بدون خوادم على Supabase Edge Functions (بيئة Deno) لمعالجة استدعاءات أدوات VAPI، مع تحليل ديناميكي للمعاملات ودعم تنسيقات متعددة">Designed serverless webhook architecture on Supabase Edge Functions (Deno runtime) handling VAPI tool-call payloads, with dynamic argument parsing and multi-format payload support</li>
+                    <li data-en="Integrated VAPI Function Calling with PostgreSQL backend for real-time slot management, duplicate prevention via DB constraints, and JWT-free public endpoint deployment"
+                        data-ar="ربطت استدعاء الأدوات (Function Calling) من VAPI مع قاعدة بيانات PostgreSQL لإدارة المواعيد الفورية، مع منع التكرار عبر قيود قاعدة البيانات ونشر بدون مصادقة JWT">Integrated VAPI Function Calling with PostgreSQL backend for real-time slot management, duplicate prevention via DB constraints, and JWT-free public endpoint deployment</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ====== KEY PROJECTS ====== -->
+        <section class="cv-section">
+            <h2 class="section-title" data-en="Key Projects" data-ar="المشاريع الرئيسية">Key Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="entry-block">
+                <div class="entry-header">
+                    <h3 data-en="Zoul Market — Full E-Commerce Ecosystem"
+                        data-ar="زول ماركت — نظام تجارة إلكترونية متكامل">Zoul Market — Full E-Commerce Ecosystem</h3>
+                    <a href="https://www.zoul-market.online" target="_blank" class="project-link">zoul-market.online</a>
+                    <a href="https://github.com/beko2499/zoolmarket" target="_blank" class="project-link github-link">GitHub</a>
+                </div>
+                <p class="tech-stack">Flutter · Node.js · React · MongoDB · Socket.io</p>
+                <ul class="cv-list">
+                    <li data-en="Architected a complete e-commerce ecosystem and directed AI generation to build and connect 5 interconnected apps: Marketplace (Flutter), Courier app (Flutter), Admin Dashboard (React+TS), Backend API (Node.js+Express), Landing Page"
+                        data-ar="صممت معمارية نظام تجارة إلكترونية متكامل ووجّهت توليد الأكواد لبناء وربط 5 تطبيقات مترابطة: سوق (Flutter)، تطبيق مندوب (Flutter)، لوحة تحكم (React+TS)، خادم API (Node.js)، صفحة تسويقية">
+                        Architected a complete e-commerce ecosystem and directed AI generation to build and connect 5
+                        interconnected apps: Marketplace (Flutter), Courier app (Flutter), Admin Dashboard (React+TS),
+                        Backend API (Node.js+Express), Landing Page</li>
+                    <li data-en="Implemented real-time chat (Socket.io), push notifications (Firebase FCM), Telegram & WhatsApp bot integrations"
+                        data-ar="نفذت محادثات فورية (Socket.io)، إشعارات (Firebase FCM)، وتكامل بوتات Telegram و WhatsApp">
+                        Implemented real-time chat (Socket.io), push notifications (Firebase FCM), Telegram & WhatsApp
+                        bot integrations</li>
+                    <li data-en="12 database models, GPS tracking with Google Maps, QR-based payments, wallet system"
+                        data-ar="12 نموذج بيانات، تتبع GPS مع خرائط Google، دفع بـ QR، ونظام محفظة">12 database models,
+                        GPS tracking with Google Maps, QR-based payments, wallet system</li>
+                </ul>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="entry-block">
+                <div class="entry-header">
+                    <h3 data-en="Enterprise Automation & Lead AI Routing"
+                        data-ar="أتمتة الأعمال وتوجيه العملاء بالذكاء الاصطناعي">Enterprise Automation & Lead AI Routing
+                    </h3>
+                    <a href="https://github.com/beko2499/n8n-lead-automation" target="_blank" class="project-link github-link">GitHub</a>
+                    <span class="status-badge" data-en="Completed" data-ar="مكتمل">Completed</span>
+                </div>
+                <p class="tech-stack">n8n · Docker · Webhooks · Gemini 2.5 Flash · Telegram API</p>
+                <ul class="cv-list">
+                    <li data-en="Architected and orchestrated an intelligent enterprise pipeline that integrates multiple systems to receive, parse, and route incoming leads — enabling hyper-personalized marketing campaigns and dynamic content delivery."
+                        data-ar="صممت ونسّقت مساراً مؤسسياً ذكياً يربط عدة أنظمة لاستقبال وتحليل وتوجيه العملاء — لتمكين الحملات التسويقية فائقة التخصيص وتقديم المحتوى الديناميكي.">
+                        Architected and orchestrated an intelligent enterprise pipeline that integrates multiple systems to receive, parse, and route incoming leads — enabling hyper-personalized marketing campaigns and dynamic content delivery.</li>
+                    <li data-en="Integrated Gemini AI to classify leads into Hot/Warm/Cold based on intent, budget, and readiness."
+                        data-ar="دمج Gemini AI لتصنيف العملاء إلى (حار/دافئ/بارد) بناءً على النية والميزانية والجاهزية.">Integrated Gemini AI to classify leads into Hot/Warm/Cold based on intent, budget, and readiness.</li>
+                    <li data-en="Self-hosted n8n on a VPS via Docker with error-handling workflows and Telegram alerts."
+                        data-ar="استضافة ذاتية لنظام n8n على VPS عبر Docker مع مسارات لمعالجة الأخطاء وتنبيهات عبر تيليجرام.">Self-hosted n8n on a VPS via Docker with error-handling workflows and Telegram alerts.</li>
+                </ul>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

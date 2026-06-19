@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: abubkr-portfolio
+    runtime: static
+    buildCommand: echo "Static site — no build step"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=3600
+      - path: "*.mp4"
+        name: Cache-Control
+        value: public, max-age=86400
+      - path: "*.jpg"
+        name: Cache-Control
+        value: public, max-age=86400
+      - path: "*.css"
+        name: Cache-Control
+        value: public, max-age=3600
+      - path: "*.js"
+        name: Cache-Control
+        value: public, max-age=3600
+    routes:
+      - type: rewrite
+        source: /cv
+        destination: /cv.html

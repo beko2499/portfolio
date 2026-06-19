@@ -1,0 +1,9 @@
+# Source/working media not part of the deployed site
+profile.jpg
+0619 (1).mp4
+_frame*.png
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.tmp
