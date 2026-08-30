@@ -4,7 +4,7 @@ Personal portfolio and CV site for **Abubkr Abbas Elkhider Mohammed**, AI-Assist
 
 ## Live Site
 
-**https://portfolio-dlqw.onrender.com** — deployed on [Render](https://render.com) as a static site.
+**https://portfolio-zrgz.onrender.com** — deployed on [Render](https://render.com) as a static site.
 
 | Path | Page |
 |------|------|
