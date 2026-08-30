@@ -7,3 +7,13 @@ _frame*.png
 .DS_Store
 Thumbs.db
 *.tmp
+
+# Raw generated originals (the renamed copies are what ships)
+Codex Image*.png
+ChatGPT Image*.png
+
+# Local tooling
+.claude/
+avatar-3d.jpg
+character-loop.mp4
+character-poster.jpg

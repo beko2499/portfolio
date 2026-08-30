@@ -9,12 +9,12 @@ services:
       - path: /*
         name: Cache-Control
         value: public, max-age=3600
-      - path: "*.mp4"
+      - path: "*.png"
         name: Cache-Control
-        value: public, max-age=86400
+        value: public, max-age=604800
       - path: "*.jpg"
         name: Cache-Control
-        value: public, max-age=86400
+        value: public, max-age=604800
       - path: "*.css"
         name: Cache-Control
         value: public, max-age=3600
