@@ -316,8 +316,33 @@ body {
         print-color-adjust: exact !important;
         background: #7B2D2D !important;
     }
-    .section-title { border-bottom-color: #ccc !important; }
-    .entry-block { break-inside: avoid; page-break-inside: avoid; }
+    /* Never strand a heading at the foot of a page */
+    .section-title {
+        border-bottom-color: #ccc !important;
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+    .cv-section { break-inside: auto; }
+    /* Long entries may split across pages — a stranded heading looks far worse
+       than a bullet list continuing overleaf. */
+    .entry-block { break-inside: auto; }
+    .entry-header, .entry-sub, .tech-stack { break-after: avoid; page-break-after: avoid; }
+    .cv-list li { break-inside: avoid; orphans: 2; widows: 2; }
+
+    /* Tighter rhythm so the CV lands on two sheets */
+    .cv-page { padding: 16px 32px !important; }
+    .cv-section { margin-bottom: 9px !important; }
+    .section-title { font-size: 13.5px !important; margin-bottom: 5px !important; padding-bottom: 3px !important; }
+    .entry-block { margin-bottom: 7px !important; }
+    .name { font-size: 24px !important; }
+    .entry-header h3 { font-size: 12.5px !important; }
+    .entry-sub { font-size: 11.5px !important; margin: 1px 0 3px !important; }
+    .body-text { font-size: 11.5px !important; line-height: 1.5 !important; }
+    .cv-list { gap: 1px !important; }
+    .cv-list li { font-size: 11.5px !important; line-height: 1.4 !important; }
+    .skills-list li { line-height: 1.45 !important; }
+    .tech-stack { font-size: 9.5px !important; margin: 2px 0 3px !important; }
+    .contact-row { margin-bottom: 2px !important; }
     .screenshots-row { flex-wrap: nowrap !important; }
     .screenshot { width: 130px !important; height: 75px !important; }
     .project-link { color: #7B2D2D !important; }
